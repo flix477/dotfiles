@@ -1,0 +1,50 @@
+set nocompatible
+syntax on "enables syntax highlighting
+set number "shows line number
+set visualbell
+set encoding=utf-8
+set ttyfast
+set showmatch "highlight matching (){}[]
+set mouse=a "enable mouse support for when i'm lazy
+set scrolloff=3 "number of lines to show beneath the current line
+set cursorline "underlines the current line 
+set wildmenu "visual autocomplete menu
+set lazyredraw
+filetype plugin indent on "enable different indents per filetype
+set t_vb=
+
+set incsearch "search as you type
+set hlsearch "highlight search matches
+
+set tabstop=2 "number of spaces to display per tab
+set expandtab "use spaces
+set shiftwidth=2 "affects << and >>
+set softtabstop=2 "number of spaces to insert on tab
+
+set showcmd "show number of selected characters
+
+set clipboard=unnamed "use the os clipboard
+
+set backspace=indent,eol,start "use backspace
+
+let g:ale_fix_on_save = 1
+let g:ale_cpp_cc_options = '-std=c++20 -Wall'
+let g:ale_cpp_clangcheck_options = '-- -Wall -std=c++20 -x c++'
+let g:ale_cpp_clangtidy_options = '-Wall -std=c++20 -x c++'
+let g:ale_fixers = {'*': ['remove_trailing_lines', 'trim_whitespace']}
+let g:ale_fixers.javascript = ['prettier']
+let g:ale_fixers.rust = ['rustfmt']
+let g:ale_fixers.typescript = ['prettier']
+
+set foldmethod=syntax
+let javaScript_fold=1 "activate folding by JS syntax
+set foldlevelstart=99 "start file with all folds opened
+
+"fold with space
+nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
+vnoremap <Space> zf
+
+try
+  source ~/.local.vimrc
+catch
+endtry

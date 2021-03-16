@@ -1,0 +1,50 @@
+{
+    "VimCompletesMe": {
+        "branch": "master",
+        "description": "You don't Complete Me; Vim Completes Me! A super simple, super minimal, super light-weight tab completion plugin for Vim.",
+        "homepage": "",
+        "owner": "ajh17",
+        "repo": "VimCompletesMe",
+        "rev": "2c69e30675d2a30208099742d14bd661d99fc5f2",
+        "sha256": "0gjzl0027xjkq0mbqs9grab38ghwnixr57b4wicl113yd76hyb5i",
+        "type": "tarball",
+        "url": "https://github.com/ajh17/VimCompletesMe/archive/2c69e30675d2a30208099742d14bd661d99fc5f2.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "niv": {
+        "branch": "master",
+        "description": "Easy dependency management for Nix projects",
+        "homepage": "https://github.com/nmattia/niv",
+        "owner": "nmattia",
+        "repo": "niv",
+        "rev": "af958e8057f345ee1aca714c1247ef3ba1c15f5e",
+        "sha256": "1qjavxabbrsh73yck5dcq8jggvh3r2jkbr6b5nlz5d9yrqm9255n",
+        "type": "tarball",
+        "url": "https://github.com/nmattia/niv/archive/af958e8057f345ee1aca714c1247ef3ba1c15f5e.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "nixpkgs": {
+        "branch": "release-20.03",
+        "description": "Nix Packages collection",
+        "homepage": "",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "462c6fe4b115804ea4d5bee7103c0f46ff9f9cfb",
+        "sha256": "0a4bdaxjrds6kyw9s3r2vbc96f7glgy5n03jk4zr5z8h3j4v2s81",
+        "type": "tarball",
+        "url": "https://github.com/NixOS/nixpkgs/archive/462c6fe4b115804ea4d5bee7103c0f46ff9f9cfb.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "vim-wordmotion": {
+        "branch": "master",
+        "description": "More useful word motions for Vim",
+        "homepage": "",
+        "owner": "chaoren",
+        "repo": "vim-wordmotion",
+        "rev": "14f9eb18d36db7b442df5611d42cce6986fdf221",
+        "sha256": "1jdp76vwijx7wsqi5hbzfh67r2nrlva4yk2wqmq55w3z5m5r6hbz",
+        "type": "tarball",
+        "url": "https://github.com/chaoren/vim-wordmotion/archive/14f9eb18d36db7b442df5611d42cce6986fdf221.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    }
+}
