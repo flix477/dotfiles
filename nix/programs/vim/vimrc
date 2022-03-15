@@ -7,7 +7,7 @@ set ttyfast
 set showmatch "highlight matching (){}[]
 set mouse=a "enable mouse support for when i'm lazy
 set scrolloff=3 "number of lines to show beneath the current line
-set cursorline "underlines the current line 
+set cursorline "underlines the current line
 set wildmenu "visual autocomplete menu
 set lazyredraw
 filetype plugin indent on "enable different indents per filetype
@@ -22,8 +22,6 @@ set shiftwidth=2 "affects << and >>
 set softtabstop=2 "number of spaces to insert on tab
 
 set showcmd "show number of selected characters
-
-set clipboard=unnamed "use the os clipboard
 
 set backspace=indent,eol,start "use backspace
 
@@ -43,6 +41,12 @@ set foldlevelstart=99 "start file with all folds opened
 "fold with space
 nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
 vnoremap <Space> zf
+
+"colorscheme
+if (has("termguicolors"))
+  set termguicolors
+endif
+colorscheme molokai
 
 try
   source ~/.local.vimrc

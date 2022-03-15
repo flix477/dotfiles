@@ -11,11 +11,12 @@
       httpie
       niv
       nmap
-      nodejs-15_x
+      nodejs-16_x
       pinentry_mac
       python3
       youtube-dl
       nodePackages.prettier
+      p7zip
     ];
 
     programs = import ./programs/default.nix { inherit pkgs sources; };

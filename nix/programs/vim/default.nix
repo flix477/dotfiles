@@ -8,6 +8,8 @@ in {
 
   plugins = resolvePlugins [
     "ale"
+    "coc-nvim"
+    "awesome-vim-colorschemes"
     "vim-wordmotion"
     "VimCompletesMe"
     "vim-polyglot"
